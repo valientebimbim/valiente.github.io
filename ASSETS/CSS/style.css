@@ -1,0 +1,284 @@
+:root {
+
+    --bg1: #2D2A2B;
+    --bg2: rgb(44, 42, 42);
+    --body: rgb(95, 86, 86);
+    --brand: #F2B03B;
+    --white: rgb(235, 235, 235);
+    --p: rgb(161, 150, 150);
+
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+/* h1 , h2 , h3 , h4 , h5 , h6,
+.h1 , .h2 , .h3 , .h4 , .h5 , .h6, {
+    font-weight: 600;
+
+} */
+
+a {
+    text-decoration: none;
+}
+
+.p-light {
+    color: var(--p);
+}
+
+/*Navbar*/
+.navbar {
+    background: linear-gradient(to bottom, hsla(0, 2%, 17%, 0.829), rgba(44, 42, 42, 0.884));
+
+}
+
+.navbar-brand img {
+    width: 50%;
+    height: auto;
+}
+
+.navbar #navbarNav .nav-link.active {
+    color: var(--brand) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--brand) !important;
+}
+
+
+#banner {
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url(https://images4.fanpop.com/image/photos/22000000/Cute-Puppies-puppies-22040946-1280-800.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+/*  button */
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+
+}
+
+/*About*/
+#about {
+    background-color: var(--bg1);
+    position: relative;
+    z-index: 1;
+
+}
+
+#about:after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6 {
+    color: var(--brand);
+    z-index: 1;
+    font-weight: 600;
+}
+
+#about h2 {
+    font-weight: 800;
+    margin-top: 15px;
+    background-color: var(--bg1);
+}
+
+
+#services {
+    background-color: var(--white);
+}
+
+.icon-box-img {
+    width: 40%;
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.card:hover {
+    background-color: var(--bg1);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #ffffff;
+}
+
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* parallax effect */
+    background-attachment: fixed;
+    /* parallax effect / to remove to effect  set to normal*/
+    background-image: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url(../images/hero\ section-0630.jpg);
+    min-height: 70vh;
+}
+
+#reviews {
+    background-color: rgb(255, 255, 255);
+}
+
+.testimonials {
+    background-color: rgb(39, 44, 43);
+    padding: 30px;
+}
+
+.testimonials img{
+    width: 65px ;
+    border-radius: 100px;
+    height: 65px ;
+}
+
+#reviews a{
+    color: var();
+}
+
+
+.faq-section{
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion-item{
+    margin-bottom: 20px; /* Add margin botton for spacing */
+    border-radius: 0 !important;
+}
+
+.faq-section{
+    background-color: #352835;
+    border: none;
+    border-bottom: 1px solid #1ce5ec;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect*/
+
+}
+
+.faq-answer{
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #1ce085;
+}
+
+.faq-answer p{
+    margin-bottom: 0;
+
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bg2);
+
+}
+
+/*Hover effect for FAQ question*/
+.faq-question:hover {
+  background-color: var(--brand); /*Change background color on hover*/
+  color: var(--bg1); /*Change text color on hover*/
+
+}
+
+/* Adjust accordion icon */
+.accordion-button:after{
+    font-family: "Font Awesome 5 Free";
+    content: ""; /* plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+
+}
+
+.accordion-button[aria-expanded="true"]:after{
+    content:""; /* Minus icon */
+}
+
+/* Footer */
+#footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg1);
+}
+
+#footer ul.list-unstyled li a {
+    color: #ffffff;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--brand) ;
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg1);
+}
+
+.btn-outline-light {
+    border-color: #F2B03B !important;
+    color: #F2B03B;
+}
+
+@media only screen and (max-width:767px) {
+
+    section {
+        padding: 60px 10px;
+    }
+    
+}
+
